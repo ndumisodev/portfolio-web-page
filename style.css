@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+/* margin-top: 20px; */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+  
+
+
+.container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+    background-image: url("assets/steve-johnson-UlJ6UMbto10-unsplash.jpg");
+    /* background-image: url("assets/photo-1739179418368-f3b508d8a3a2.avif"); */
+    /* background-image: url("assets/pexels-artempodrez-7233323.jpg"); */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding-top: 20px;
+    /* margin-top: 20px; */
+    /* background-attachment: fixed; */
+    /* object-fit: cover; */
+}
+
+
+
+section {
+    height: 100vh;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    scroll-snap-align: start;
+}
+
+.one {
+    padding-top: 10px;
+    /* height: 100vh; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: flex-start; */
+    /* background-color: aqua; */
+    /* background-image: url("assets/karsten-winegeart-kpX0CebuIaU-unsplash.jpg"); */
+
+
+}
+
+.two {
+    /* background-color: bisque; */
+}
+
+.three {
+    /* background-color: blueviolet; */
+}
+
+.four {
+    /* background-color: tomato; */
+}
+
+/* Navigation Bar */
+
+.nav-bar{
+    max-width: 90%; 
+    margin: 20px auto;  
+    padding: 2px 2px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(219, 211, 211, 0.6);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  /* border: 2px solid white; */
+
+}
+
+/* Left (logo) */
+.logo p {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+
+/* Center (nav menu) */
+.navigation ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    font-family: "Alfa Slab One", serif;
+    /* font-family: "inherit"; */
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+.navigation a {
+    text-decoration: none;
+    color: black;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+  }
+  
+  .navigation a:hover,
+  .navigation a:active {
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+  }
+
+
+  .navigation a.active {
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+  }
+
+
+
+  .material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+  }
+
+  .toggle_button{
+    color: black;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+  }
+
+
+
+/* Hero Content Layout */
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    height: 100%;
+}
+
+.hero-content .text {
+    max-width: 50%;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+}
+
+/* Hero Image */
+.hero-content .image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+
+button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    font-family: inherit;
+  }
+  
+  /* Make sure the icon stays inline and white */
+  .material-symbols-outlined {
+    font-size: 1.2rem;
+    color: white;
+  }
+  
+  /* Optional: Add hover style for better interactivity */
+  button:hover {
+    background-color: #222;
+  }
+
+
+  .toggle_button {
+    cursor: pointer;
+    /* padding: 10px; */
+  }
+  
+  .toggle_button .material-symbols-outlined {
+    font-size: 2rem;
+    color: black; /* Make the icon black */
+  }
+  
+  /* You can also add a hover effect if you want */
+  .toggle_button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+
+.dropdown-menu{
+    /* display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 10px; */
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(15px);
+    border-radius: 5px;
+    overflow: hidden;
+    
+}
+
+.dropdown-menu a {
+    text-decoration: none;
+    color: black;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+  }
+
+
+  .dropdown-menu li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.6rem;
+  }
+
+
+  .dropdown-menu ul {
+    list-style: none;
+    /* display: flex; */
+    /* gap: 2rem; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* padding: 0; */
+    /* margin: 0; */
+    font-family: "Alfa Slab One", serif;
+    /* font-family: "inherit"; */
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.dropdown-menu .resume-btn2{
+    /* width: %; */
+    margin-left: 70px;
+    margin-bottom: 20px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+
+
+/* RESPONSIVENESS */
+@media (max-width: 1070px) {
+    .navigation {
+      display: none;
+    }
+    
+    .resume-btn {
+      display: none;
+    }
+    
+   .toggle_button {
+      display: block; /* Make sure it's shown */
+    }
+
+    .dropdown-menu{
+        display: block;
+    }
+  }
