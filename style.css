@@ -314,3 +314,11 @@ button {
         display: block;
     }
   }
+
+
+  @media (max-width: 600px) {
+    .dropdown-menu{
+        left: 2rem;
+        width: unset;
+    }
+  }
