@@ -40,3 +40,17 @@ window.addEventListener('load', () => {
     container.dispatchEvent(new Event('scroll'));
 });
 window.addEventListener('hashchange', calculatePositions);
+
+
+
+const toggleButton = document.querySelector(".toggle_button")
+const toggleButtonIcon = document.querySelector(".toggle_button span")
+const dropDownMenu = document.querySelector(".dropdown-menu")
+
+toggleButton.addEventListener('click', function() {
+    dropDownMenu.classList.toggle("open");
+    const isOpen = dropDownMenu.classList.contains("open");
+    
+    // Toggle between menu and close icons
+    toggleButtonIcon.textContent = isOpen ? "close" : "menu";
+});

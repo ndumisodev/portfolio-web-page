@@ -141,7 +141,8 @@ section {
     'FILL' 0,
     'wght' 400,
     'GRAD' 0,
-    'opsz' 24
+    'opsz' 24;
+    transition: none !important; 
   }
 
   .toggle_button{
@@ -241,7 +242,13 @@ button {
     backdrop-filter: blur(15px);
     border-radius: 5px;
     overflow: hidden;
+    height: 0;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275) ;
     
+}
+
+.dropdown-menu.open{
+    height: 300px;
 }
 
 .dropdown-menu a {
@@ -285,6 +292,7 @@ button {
     justify-content: center;
     align-items: center; */
 }
+
 
 
 
