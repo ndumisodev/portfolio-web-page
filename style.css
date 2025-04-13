@@ -285,12 +285,12 @@ button {
 
 
 .dropdown-menu .resume-btn2{
-    /* width: %; */
-    margin-left: 70px;
-    margin-bottom: 20px;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
+  
+    margin: 0 auto;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 
@@ -298,6 +298,13 @@ button {
 
 /* RESPONSIVENESS */
 @media (max-width: 1070px) {
+
+    .nav-bar{
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0);
+      background-color: rgba(219, 211, 211, 0);
+
+    }
+
     .navigation {
       display: none;
     }
