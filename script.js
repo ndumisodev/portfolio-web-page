@@ -54,3 +54,27 @@ toggleButton.addEventListener('click', function() {
     // Toggle between menu and close icons
     toggleButtonIcon.textContent = isOpen ? "close" : "menu";
 });
+
+
+
+
+
+function adjustForNavbar() {
+    const navBar = document.querySelector('.nav-bar');
+    const navHeight = navBar.offsetHeight;
+    
+    // Update container padding
+    document.querySelector('.container').style.paddingTop = `${navHeight + 20}px`;
+    
+    // Update section margins
+    document.querySelectorAll('section:not(.one)').forEach(section => {
+        section.style.marginTop = `${navHeight}px`;
+    });
+    
+    // Update hero content padding
+    document.querySelector('.hero-content').style.paddingTop = `${navHeight}px`;
+}
+
+// Run on load and resize
+window.addEventListener('load', adjustForNavbar);
+window.addEventListener('resize', adjustForNavbar);
