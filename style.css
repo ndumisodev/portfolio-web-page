@@ -108,10 +108,11 @@ section {
     align-items: center;
     padding: 0;
     margin: 0;
-    font-family: "Alfa Slab One", serif;
+    font-family: 'Lexend', sans-serif;
+    /* font-family: "Alfa Slab One", serif; */
     /* font-family: "inherit"; */
-    font-weight: 400;
-    font-style: normal;
+    font-weight: 800;
+    /* font-style: normal; */
 }
 
 
@@ -201,7 +202,8 @@ button {
     align-items: center;
     gap: 8px;
     cursor: pointer;
-    font-family: inherit;
+    font-family: 'Lexend', sans-serif;
+    ;
   }
   
   /* Make sure the icon stays inline and white */
@@ -271,6 +273,8 @@ button {
     align-items: center;
     justify-content: center;
     padding: 0.6rem;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 800;
   }
 
 
@@ -305,7 +309,7 @@ button {
   height: 85vh;
   margin: 80px 40px  ;
   background-color: rgba(255, 255, 255, 0.6); 
-    backdrop-filter: blur(10px); 
+    backdrop-filter: blur(8px); 
     -webkit-backdrop-filter: blur(10px); 
     border-radius: 8px;
     display: flex;
@@ -314,6 +318,7 @@ button {
     padding: 40px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    border: white solid 2px;
     /* flex-wrap: wrap; */
     
 
