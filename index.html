@@ -16,6 +16,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=Bebas+Neue&family=Karla:ital,wght@0,200..800;1,200..800&family=Lexend:wght@100..900&family=Lilita+One&family=Markazi+Text:wght@400..700&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Smooch+Sans:wght@100..900&family=Special+Gothic&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+<link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
 </head>
 
 
@@ -68,13 +71,21 @@
                         <p class="greeting">HI, my name is</p>
                         <h1 class="name">Ndumiso Ngobese</h1>
                         <p class="tagline">Aspiring Software Developer | WeThinkCode_ Graduate | Building User-Focused Web Experiences</p>
-                        <p class="bio">A passionate and driven aspiring software developer and a recent graduate of WeThinkCode_.
-                         With a strong foundation in both backend and frontend development, complemented by a Google UX Design Professional Certificate,
+                        <p class="bio">I build responsive web applications with React and robust backend systems with Python/Java. 
+                            Certified in Front-End Development and Back-End by Meta and Coursera, I combine technical 
+                            skills with UX principles to create seamless digital experiences.
                          I'm eager to contribute to innovative projects and create impactful, user-friendly solutions.</p>
-                        <button class="cta-button">
-                            Get In Touch
-                            <span class="material-symbols-outlined">mail</span>
-                        </button>
+                    
+                        <div class="button-group">
+                            <button class="cta-button primary">
+                                View Projects
+                                <span class="material-symbols-outlined">engineering</span>
+                            </button>
+                            <button class="cta-button secondary">
+                                Contact Me
+                                <span class="material-symbols-outlined second">mail</span>
+                            </button>
+                        </div>
                     </div>
                     <div class="image-container">
                         <img src="assets/1721330196518.jpeg" alt="Ndumiso Ngobese" />
@@ -89,6 +100,7 @@
                 <h2 class="section-title">About Me</h2>
                 <div class="about-container">
                     <div class="about-text">
+                        <h3>About Me</h3>
                         <p>I am a passionate developer with a strong foundation in both back-end and front-end technologies. My experience at WethinkCode_ has equipped me with practical skills in software development, agile methodologies, and test-driven development.</p>
                         <p>I excel at breaking down complex problems into manageable steps and implementing robust solutions through iterative development processes.</p>
                         <p>I'm primarily focused on back-end development using Java and Python, but I also have experience with front-end technologies like JavaScript and React.</p>
@@ -120,50 +132,168 @@
             </div>
 
 
-
-                    <div class="skills-container">
-                        <h3>My Skills</h3>
-                        <div class="skills-grid">
-                            <div class="skill-category">
-                                <h4>Languages</h4>
-                                <ul>
-                                    <li>Java</li>
-                                    <li>Python</li>
-                                    <li>JavaScript</li>
-                                </ul>
-                            </div>
-                            <div class="skill-category">
-                                <h4>Frameworks</h4>
-                                <ul>
-                                    <li>React</li>
-                                    <li>Django</li>
-                                    <li>Javalin</li>
-                                </ul>
-                            </div>
-                            <div class="skill-category">
-                                <h4>Tools</h4>
-                                <ul>
-                                    <li>Git & GitHub</li>
-                                    <li>MySQL</li>
-                                    <li>Docker</li>
-                                    <li>RESTful APIs</li>
-                                </ul>
-                            </div>
-                            <div class="skill-category">
-                                <h4>Methodologies</h4>
-                                <ul>
-                                    <li>Agile & Scrum</li>
-                                    <li>Test-Driven Development</li>
-                                    <li>CI/CD</li>
-                                </ul>
+            <div class="skills-container">
+                <h3>My Skills</h3>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h4>Languages</h4>
+                        <ul class="skills-list">
+                            <li>
+                                <i class="devicon-java-plain colored"></i>
+                                <span>Java</span>
+                            </li>
+                            <li>
+                                <i class="devicon-python-plain colored"></i>
+                                <span>Python</span>
+                            </li>
+                            <li>
+                                <i class="devicon-javascript-plain colored"></i>
+                                <span>JavaScript</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h4>Frameworks</h4>
+                        <ul class="skills-list">
+                            <li>
+                                <i class="devicon-react-original colored"></i>
+                                <span>React</span>
+                            </li>
+                            <li>
+                                <i class="devicon-django-plain colored"></i>
+                                <span>Django</span>
+                            </li>
+                            <li>
+                                <i class="devicon-spring-plain colored"></i>
+                                <span>Javalin</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h4>Development Tools</h4>
+                        <ul class="skills-list">
+                            <!-- Grouped version control tools -->
+                            <li class="grouped-skills">
+                                <div class="grouped-icons">
+                                    <i class="devicon-git-plain colored"></i>
+                                    <i class="devicon-github-original"></i>
+                                    <i class="devicon-gitlab-plain colored"></i>
+                                </div>
+                                <span>Version Control</span>
+                            </li>
+                            <!-- Grouped database tools -->
+                            <li class="grouped-skills">
+                                <div class="grouped-icons">
+                                    <i class="devicon-mysql-plain colored"></i>
+                                    <i class="devicon-postgresql-plain colored"></i>
+                                    <i class="devicon-sqlite-plain colored"></i>
+                                </div>
+                                <span>Databases</span>
+                            </li>
+                            <li>
+                                <i class="devicon-docker-plain colored"></i>
+                                <span>Docker</span>
+                            </li>
+                            <li>
+                                <i class="devicon-vscode-plain colored"></i>
+                                <span>VSCode</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h4>Methodologies</h4>
+                        <ul class="skills-list">
+                            <li>
+                                <i class="devicon-jira-plain colored"></i>
+                                <span>Agile & Scrum</span>
+                            </li>
+                            <li>
+                                <i class="devicon-jenkins-plain colored"></i>
+                                <span>CI/CD</span>
+                            </li>
+                            <li>
+                                <i class="devicon-pytest-plain"></i>
+                                <span>Test-Driven Development</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+        <section class="three" id="work">
+            <div class="work-content">
+                <h2 class="section-title">My Projects</h2>
+                <div class="projects-container">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <!-- Add actual project image -->
+                            <img src="assets/placeholder-project1.jpg" alt="Robot Worlds API">
+                        </div>
+                        <div class="project-info">
+                            <h3>Robot Worlds API</h3>
+                            <p class="project-tech">Java, Javalin, JDBC, MySQL, GitLab CI/CD, Docker</p>
+                            <p class="project-desc">A simulation environment that handles HTTP requests and world management for robot interactions. The API allows robots to be launched and controlled through HTTP requests in a virtual world.</p>
+                            <div class="project-links">
+                                <a href="#" class="project-btn">View Code</a>
+                                <a href="#" class="project-btn">Live Demo</a>
                             </div>
                         </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <!-- Add actual project image -->
+                            <img src="assets/placeholder-project2.jpg" alt="Plotta Web App">
+                        </div>
+                        <div class="project-info">
+                            <h3>Plotta Web App</h3>
+                            <p class="project-tech">Python, JavaScript, Plotly</p>
+                            <p class="project-desc">A web application for plotting mathematical functions in both 2D and 3D. The app supports various function types including trigonometric, linear, and exponential.</p>
+                            <div class="project-links">
+                                <a href="#" class="project-btn">View Code</a>
+                                <a href="#" class="project-btn">Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Add your two front-end projects in the same format -->
+                </div>
+            </div>
+        </section>
+        <section class="four" id="pitch">
+            <div class="pitch-content">
+                <h2 class="section-title">My Elevator Pitch</h2>
+                <div class="pitch-container">
+                    <div class="pitch-text">
+                        <p class="pitch-headline">"I build efficient, scalable back-end solutions with clean code and user-focused design."</p>
+                        <p>I'm a software developer specializing in back-end technologies like Java and Python, with complementary front-end skills in JavaScript and React. My experience at WethinkCode_ has equipped me with practical skills in agile development, test-driven methodologies, and collaborative problem-solving.</p>
+                        <p>What sets me apart is my analytical approach to breaking down complex problems and my commitment to writing clean, maintainable code. I'm seeking a junior back-end developer role where I can contribute to impactful projects while continuing to grow my technical expertise.</p>
+                    </div>
+                    <div class="contact-form">
+                        <h3>Get In Touch</h3>
+                        <form id="contact-form">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">Send Message <span class="material-symbols-outlined">send</span></button>
+                        </form>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="three" id="work">Project</section>
-        <section class="four" id="pitch">Elevator Pitch</section>
     </div>
 
     <script src="script.js"></script>

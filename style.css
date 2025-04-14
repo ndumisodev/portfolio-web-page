@@ -74,7 +74,7 @@ section {
 /* Navigation Bar */
 
 .nav-bar{
-    max-width: 90%; 
+    max-width: 95%; 
     margin: 20px auto;  
     padding: 2px 2px;
     border-radius: 8px;
@@ -405,6 +405,31 @@ cta-button .material-symbols-outlined {
   transform: translateX(3px); 
 }
 
+
+.button-group {
+  display: flex;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.cta-button.secondary {
+  background-color: transparent;
+  color: black;
+  border: 2px solid black;
+}
+
+.material-symbols-outlined.second{
+  color:black;
+}
+
+.cta-button.secondary:hover {
+  background-color: rgba(0,0,0,0.05);
+}
+
+
+
+
+
 /* Image styling */
 .image-container {
   width: 40%;
@@ -437,6 +462,9 @@ cta-button .material-symbols-outlined {
 
 
 
+
+
+
 /* ABOUT STYLING */
 
 /* Common section styling */
@@ -451,11 +479,11 @@ cta-button .material-symbols-outlined {
 
 /* About section styling */
 .about-content, .work-content, .pitch-content {
-  max-width: 90%;
+  max-width: 95%;
   margin: 0 auto;
-  padding: 40px;
-  background-color: rgba(255, 255, 255, 0.6);
-  backdrop-filter: blur(8px);
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(10px);
   border-radius: 8px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
@@ -469,11 +497,17 @@ cta-button .material-symbols-outlined {
   flex-wrap: wrap;
   gap: 30px;
   justify-content: space-between;
+  
 }
+
 
 .about-text {
   flex: 1;
   min-width: 300px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
 
 .about-text p {
@@ -526,7 +560,7 @@ cta-button .material-symbols-outlined {
 }
 
 .skill-category li:before {
-  content: "→";
+  /* content: "→"; */
   position: absolute;
   left: 0;
   color: #000;
@@ -537,10 +571,16 @@ cta-button .material-symbols-outlined {
 .education-container {
   flex: 1;
   min-width: 300px;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
 
-.education-container h3 {
+
+
+ h3, .education-container h3 {
   font-family: 'Smooch Sans', sans-serif;
   font-size: 1.8rem;
   font-weight: 600;
@@ -601,9 +641,298 @@ cta-button .material-symbols-outlined {
 
 
 
+/* Skills section styling */
+.skills-container {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.skills-container h3 {
+  font-family: 'Smooch Sans', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #000;
+  text-align: center;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
+}
+
+.skill-category h4 {
+  font-family: 'Lexend', sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #000;
+  text-align: center;
+  padding-bottom: 8px;
+  border-bottom: 2px solid rgba(0,0,0,0.1);
+}
+
+.skills-list {
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.skills-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: 'Lexend', sans-serif;
+  font-size: 1rem;
+  color: #333;
+  padding: 8px 10px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.skills-list li:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+/* Icon styling */
+.skills-list i {
+  font-size: 1.8rem; /* Make icons bigger */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  padding: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skills-list li:hover i {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* For colored icons that already have colors */
+.skills-list i.colored {
+  color: inherit; /* This preserves the Devicon colored versions */
+}
+
+/* Default color for icons without built-in colors */
+.skills-list i:not(.colored) {
+  color: #333;
+}
 
 
 
+
+
+
+/* Projects section styling */
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.project-card {
+  display: flex;
+  gap: 30px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.project-image {
+  flex: 1;
+  min-width: 250px;
+  max-width: 400px;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-image img {
+  transform: scale(1.05);
+}
+
+.project-info {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-info h3 {
+  font-family: 'Smooch Sans', sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #000;
+}
+
+.project-tech {
+  font-family: 'Lexend', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.project-desc {
+  font-family: 'Lexend', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #333;
+  flex-grow: 1;
+}
+
+.project-links {
+  display: flex;
+  gap: 15px;
+}
+
+.project-btn {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-family: 'Lexend', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.project-btn:hover {
+  background-color: #333;
+  transform: translateY(-2px);
+}
+
+
+
+
+
+
+
+
+/* Elevator pitch section styling */
+.pitch-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.pitch-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.pitch-headline {
+  font-family: 'Smooch Sans', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+  color: #000;
+  line-height: 1.3;
+}
+
+.pitch-text p {
+  font-family: 'Lexend', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.contact-form h3 {
+  font-family: 'Smooch Sans', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #000;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-family: 'Lexend', sans-serif;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: 'Lexend', sans-serif;
+  font-size: 1rem;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.submit-btn {
+  background-color: black;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-family: 'Lexend', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.submit-btn:hover {
+  background-color: #333;
+  transform: translateY(-2px);
+}
 
 
 
@@ -690,3 +1019,71 @@ cta-button .material-symbols-outlined {
       font-size: 2.5rem;
   }
   }
+
+
+
+
+  /* Update the about-container layout to accommodate three columns on larger screens */
+@media (min-width: 1200px) {
+  .about-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 30px;
+  }
+}
+
+/* On medium screens, have education and skills in a row below about-text */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .about-container {
+      display: flex;
+      flex-direction: column;
+  }
+  
+  .about-text {
+      margin-bottom: 30px;
+  }
+  
+  .education-skills-row {
+      display: flex;
+      gap: 30px;
+  }
+  
+  .education-container,
+  .skills-container {
+      flex: 1;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.hero-content {
+  flex-direction: column;
+  height: auto;
+  padding: 40px 20px;
+}
+
+.hero-content .text,
+.image-container {
+  max-width: 100%;
+  width: 100%;
+}
+
+.image-container {
+  margin-top: 40px;
+  height: 300px;
+}
+}
+
+
+@media (max-width: 480px) {
+  .skills-grid {
+      grid-template-columns: 1fr;
+  }
+  
+  .skills-list i {
+      font-size: 1.5rem;
+      width: 35px;
+      height: 35px;
+  }
+}
