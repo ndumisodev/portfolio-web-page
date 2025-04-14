@@ -1014,6 +1014,11 @@ about-container {
   color: #777;
 }
 
+
+.demo{
+  color: #222;
+}
+
 /* Responsive Adjustments */
 @media (max-width: 768px) {
   .projects-container {
@@ -1141,8 +1146,159 @@ about-container {
 }
 
 
+/* Pitch Section Structure */
+#pitch {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.section-title {
+  margin-bottom: 30px;
+}
+
+.pitch-column-container {
+  display: flex;
+  height: calc(100% - 80px); /* Account for title space */
+  gap: 30px;
+}
+
+.pitch-left-col, 
+.pitch-right-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Video Placeholder */
+.video-placeholder {
+  flex: 1;
+  background: #f5f5f5;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+}
+
+.play-icon {
+  font-size: 3rem;
+  color: rgba(0,0,0,0.2);
+  margin-bottom: 10px;
+}
+
+.video-placeholder p {
+  font-family: 'Lexend', sans-serif;
+  color: #666;
+}
+
+/* Pitch Script */
+.pitch-script {
+  flex: 1;
+  background: rgba(255,255,255,0.8);
+  padding: 20px;
+  border-radius: 8px;
+  overflow-y: auto;
+}
+
+.script-content {
+  font-family: 'Lexend', sans-serif;
+  line-height: 1.6;
+}
+
+.script-content p, .script-content ul {
+  margin-bottom: 15px;
+}
+
+.script-content li {
+  margin-bottom: 8px;
+  position: relative;
+  padding-left: 15px;
+}
+
+.script-content li:before {
+  content: "▹";
+  position: absolute;
+  left: 0;
+  color: #0066cc;
+}
+
+/* Contact Form */
+.contact-form {
+  flex: 1;
+  background: rgba(255,255,255,0.8);
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Footer */
+.pitch-footer {
+  background: #111;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.footer-link {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-family: 'Lexend', sans-serif;
+  transition: opacity 0.3s;
+}
+
+.footer-link:hover {
+  opacity: 0.8;
+}
+
+.copyright {
+  text-align: center;
+  font-family: 'Lexend', sans-serif;
+  font-size: 0.8rem;
+  color: #aaa;
+  margin-top: 10px;
+}
 
 
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  #pitch {
+      height: auto;
+      min-height: 100vh;
+  }
+  
+  .pitch-column-container {
+      flex-direction: column;
+      height: auto;
+  }
+  
+  .pitch-left-col, 
+  .pitch-right-col {
+      flex: none;
+  }
+  
+  .video-placeholder {
+      min-height: 250px;
+  }
+}
 
 
 
