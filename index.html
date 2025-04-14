@@ -264,46 +264,136 @@
                 </div>
             </div>
         </section>
+
+
         <section class="three" id="work">
             <div class="work-content">
-                <h2 class="section-title">My Projects</h2>
-                <div class="projects-container">
-                    <div class="project-card">
-                        <div class="project-image">
-                            <!-- Add actual project image -->
-                            <img src="assets/placeholder-project1.jpg" alt="Robot Worlds API">
-                        </div>
-                        <div class="project-info">
-                            <h3>Robot Worlds API</h3>
-                            <p class="project-tech">Java, Javalin, JDBC, MySQL, GitLab CI/CD, Docker</p>
-                            <p class="project-desc">A simulation environment that handles HTTP requests and world management for robot interactions. The API allows robots to be launched and controlled through HTTP requests in a virtual world.</p>
-                            <div class="project-links">
-                                <a href="#" class="project-btn">View Code</a>
-                                <a href="#" class="project-btn">Live Demo</a>
-                            </div>
-                        </div>
+              <h2 class="section-title">My Projects</h2>
+              <div class="projects-container">
+                <!-- Robot Worlds API -->
+                <div class="project-card">
+                  <div class="project-image">
+                    <img src="assets/robot-worlds-thumbnail.jpg" alt="Robot Worlds API">
+                  </div>
+                  <div class="project-info">
+                    <h3>Robot Worlds API</h3>
+                    <div class="project-tech">
+                      <span>Java</span>
+                      <span>Javalin</span>
+                      <span>MySQL</span>
+                      <span>Docker</span>
                     </div>
-                    
-                    <div class="project-card">
-                        <div class="project-image">
-                            <!-- Add actual project image -->
-                            <img src="assets/placeholder-project2.jpg" alt="Plotta Web App">
-                        </div>
-                        <div class="project-info">
-                            <h3>Plotta Web App</h3>
-                            <p class="project-tech">Python, JavaScript, Plotly</p>
-                            <p class="project-desc">A web application for plotting mathematical functions in both 2D and 3D. The app supports various function types including trigonometric, linear, and exponential.</p>
-                            <div class="project-links">
-                                <a href="#" class="project-btn">View Code</a>
-                                <a href="#" class="project-btn">Live Demo</a>
-                            </div>
-                        </div>
+                    <p class="project-desc">Backend API for robot simulation with database persistence and CI/CD pipeline.</p>
+                    <ul class="project-features">
+                      <li>Implemented RESTful endpoints with Javalin</li>
+                      <li>Database integration with JDBC</li>
+                      <li>Automated testing with JUnit</li>
+                    </ul>
+                    <div class="project-links">
+                      <a href="https://github.com/ndumisodev/robot-worlds" class="project-btn primary" target="_blank">
+                        <i class="devicon-github-original"></i> Code
+                      </a>
+                      <button class="project-btn secondary disabled">
+                        <i class="material-symbols-outlined">description</i> Case Study
+                      </button>
                     </div>
-                    
-                    <!-- Add your two front-end projects in the same format -->
+                  </div>
                 </div>
+                
+                <!-- Little Lemon Restaurant -->
+                <div class="project-card">
+                  <div class="project-image">
+                    <img src="assets/Mario and Adrian A.jpg" alt="Little Lemon Restaurant">
+                  </div>
+                  <div class="project-info">
+                    <h3>Little Lemon Restaurant</h3>
+                    <div class="project-tech">
+                      <span>React</span>
+                      <span>JavaScript</span>
+                      <span>CSS3</span>
+                      <span>Testing</span>
+                    </div>
+                    <p class="project-desc">Full-stack restaurant management system with booking and menu features.</p>
+                    <ul class="project-features">
+                      <li>Table reservation system with form validation</li>
+                      <li>Dynamic menu display with admin controls</li>
+                      <li>Unit tested with React Testing Library</li>
+                    </ul>
+                    <div class="project-links">
+                      <a href="https://github.com/ndumisodev/little-lemon" class="project-btn primary" target="_blank">
+                        <i class="devicon-github-original"></i> Code
+                      </a>
+                      <a href="#" class="project-btn secondary">
+                        <i class="material-symbols-outlined">visibility</i> Demo
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Mangata & Gallo -->
+                <div class="project-card">
+                  <div class="project-image">
+                    <img src="assets/custom-design4.jpg" alt="Mangata & Gallo Jewelry">
+                  </div>
+                  <div class="project-info">
+                    <h3>Mangata & Gallo</h3>
+                    <div class="project-tech">
+                      <span>HTML5</span>
+                      <span>CSS3</span>
+                      <span>JavaScript</span>
+                      <span>Responsive</span>
+                    </div>
+                    <p class="project-desc">Luxury jewelry e-commerce site with responsive design.</p>
+                    <ul class="project-features">
+                      <li>Mobile-first responsive layout</li>
+                      <li>Interactive video banner</li>
+                      <li>CSS Grid and Flexbox</li>
+                    </ul>
+                    <div class="project-links">
+                      <a href="https://github.com/ndumisodev/mangata-gallo" class="project-btn primary" target="_blank">
+                        <i class="devicon-github-original"></i> Code
+                      </a>
+                      <a href="#" class="project-btn secondary">
+                        <i class="material-symbols-outlined">visibility</i> Demo
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Plotta Web App -->
+                <div class="project-card">
+                  <div class="dev-badge in-progress">In Development</div>
+                  <div class="project-image">
+                    <img src="assets/plotta-thumbnail.jpg" alt="Plotta Web App">
+                  </div>
+                  <div class="project-info">
+                    <h3>Plotta Web App</h3>
+                    <div class="project-tech">
+                      <span>Python</span>
+                      <span>JavaScript</span>
+                      <span>Plotly</span>
+                      <span>WebGL</span>
+                    </div>
+                    <p class="project-desc">Interactive 2D/3D function grapher for mathematical visualization.</p>
+                    <ul class="project-features">
+                      <li>Supports trigonometric and polynomial functions</li>
+                      <li>3D rendering with WebGL</li>
+                      <li>Customizable graph parameters</li>
+                    </ul>
+                    <div class="project-links">
+                      <button class="project-btn primary disabled">
+                        <i class="devicon-github-original"></i> Coming Soon
+                      </button>
+                      <button class="project-btn secondary disabled">
+                        <i class="material-symbols-outlined">visibility</i> Preview
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-        </section>
+          </section>
+
         <section class="four" id="pitch">
             <div class="pitch-content">
                 <h2 class="section-title">My Elevator Pitch</h2>
