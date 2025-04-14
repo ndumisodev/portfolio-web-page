@@ -518,6 +518,40 @@ cta-button .material-symbols-outlined {
   color: #333;
 }
 
+
+
+about-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  align-items: start; 
+}
+
+.currently-learning {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: rgba(255,255,255,0.3);
+  border-radius: 8px;
+}
+
+.currently-learning h4 {
+  font-family: 'Lexend', sans-serif;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.currently-learning ul {
+  padding-left: 1.5rem;
+}
+
+.currently-learning li {
+  font-family: 'Lexend', sans-serif;
+  margin-bottom: 0.3rem;
+  color: #555;
+}
+
+
 .skills-container {
   flex: 1;
   min-width: 300px;
@@ -636,6 +670,52 @@ cta-button .material-symbols-outlined {
   font-size: 0.9rem;
   line-height: 1.5;
   color: #555;
+}
+
+
+/* CERT LINKS */
+
+.cert-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 8px;
+  font-family: 'Lexend', sans-serif;
+  font-size: 0.9rem;
+  color: #0066cc;
+  text-decoration: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.cert-link:hover {
+  background-color: rgba(0, 102, 204, 0.1);
+  text-decoration: underline;
+}
+
+.cert-link .material-symbols-outlined {
+  font-size: 1rem;
+  vertical-align: middle;
+}
+
+
+.education-item {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.education-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.cert-link-icon{
+  color: #333;
+  color: #0066cc;
+
 }
 
 
@@ -1073,6 +1153,16 @@ cta-button .material-symbols-outlined {
   margin-top: 40px;
   height: 300px;
 }
+
+
+.about-container {
+  grid-template-columns: 1fr;
+}
+
+.education-item:not(:last-child):after {
+  left: 60px; 
+}
+
 }
 
 
