@@ -1,3 +1,6 @@
+@import url('./panchang.css');
+
+
 * {
   margin: 0;
   padding: 0;
@@ -21,7 +24,7 @@ body {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
   height: 100vh;
-  background-image: url("assets/steve-johnson-UlJ6UMbto10-unsplash.jpg");
+  background-image: url("../assets/steve-johnson-UlJ6UMbto10-unsplash.jpg");
   /* background-image: url("assets/photo-1739179418368-f3b508d8a3a2.avif"); */
   /* background-image: url("assets/pexels-artempodrez-7233323.jpg"); */
   background-size: cover;
@@ -109,9 +112,10 @@ section {
   align-items: center;
   padding: 0;
   margin: 0;
-  font-family: 'Lexend', sans-serif;
+  /* font-family: 'Lexend', sans-serif;
   font-family: "Alfa Slab One", serif;
-  font-family: "Stack Sans Notch", sans-serif;
+  font-family: "Stack Sans Notch", sans-serif; */
+  font-family: Panchang-Semibold;
   /* font-family: "inherit"; */
   font-weight: 800;
   /* font-style: normal; */
