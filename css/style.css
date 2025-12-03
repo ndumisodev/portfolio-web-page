@@ -121,11 +121,14 @@ section {
   align-items: center;
   padding: 0;
   margin: 0;
-  /* font-family: 'Lexend', sans-serif;
+  /* font-family: 'Lexend', sans-serif; */
   font-family: "Alfa Slab One", serif;
-  font-family: "Stack Sans Notch", sans-serif; */
+  /* font-family: Boxing-Regular; */
+  /* font-size: 1.8rem; */
+  /* font-family: "Stack Sans Notch", sans-serif; */
   font-family: Panchang-Semibold;
-  font-family: Boxing-Regular;
+  /* font-family: Boxing-Regular; */
+  /* font-family: 'Smooch Sans', sans-serif; */
   /* font-family: Array-Semibold; */
   /* font-family: "inherit"; */
   font-weight: 800;
