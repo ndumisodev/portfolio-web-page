@@ -82,8 +82,8 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(219, 211, 211, 0.6);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  /* background-color: rgba(219, 211, 211, 0.6); */
+  /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); */
   position: fixed;
   top: 0;
   left: 0;
