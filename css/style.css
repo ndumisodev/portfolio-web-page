@@ -33,7 +33,7 @@ body {
   background-image: url("../assets/simon-lee-wVTBCzP3Ffw-unsplash.jpg");
   background-image: url("../assets/simon-lee-2FWcYzN7X_c-unsplash.jpg");
   background-image: url("../assets/simon-lee-I9wXip-cqvA-unsplash.jpg");
-  background-image: url("../assets/simon-lee-Fee-R5kR8EQ-unsplash.jpg");
+  /* background-image: url("../assets/simon-lee-Fee-R5kR8EQ-unsplash.jpg"); */
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -60,29 +60,18 @@ section {
 
 .one {
   padding-top: 10px;
-  /* height: 100vh; */
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* justify-content: flex-start; */
-  /* background-color: aqua; */
-  /* background-image: url("assets/karsten-winegeart-kpX0CebuIaU-unsplash.jpg"); */
-
-
 }
 
 .two {
   padding-top: 75px;
-  /* background-color: bisque; */
 }
 
 .three {
   padding-top: 75px;
-  /* background-color: blueviolet; */
 }
 
 .four {
   padding-top: 75px;
-  /* background-color: tomato; */
 }
 
 /* Navigation Bar */
@@ -90,20 +79,15 @@ section {
 .nav-bar {
   max-width: 95%;
   margin: 5px auto;
-  /* padding: 2px 2px; */
   border-radius: 8px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* background-color: rgba(219, 211, 211, 0.6); */
-  /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); */
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1000;
-  /* border: 2px solid white; */
-
 }
 
 /* Left (logo) */
