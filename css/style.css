@@ -30,8 +30,10 @@ body {
   overflow-y: scroll;
   height: 100vh;
   background-image: url("../assets/steve-johnson-UlJ6UMbto10-unsplash.jpg");
-  /* background-image: url("../assets/simon-lee-wVTBCzP3Ffw-unsplash.jpg"); */
-  /* background-image: url("../assets/pexels-artempodrez-7233323.jpg"); */
+  background-image: url("../assets/simon-lee-wVTBCzP3Ffw-unsplash.jpg");
+  background-image: url("../assets/simon-lee-2FWcYzN7X_c-unsplash.jpg");
+  background-image: url("../assets/simon-lee-I9wXip-cqvA-unsplash.jpg");
+  background-image: url("../assets/simon-lee-Fee-R5kR8EQ-unsplash.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
