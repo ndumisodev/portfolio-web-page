@@ -4,6 +4,7 @@
 @import url('./styro.css');
 @import url('./zina.css');
 @import url('./boxing.css');
+@import url('./nippo.css');
 
 * {
   margin: 0;
@@ -49,7 +50,7 @@ section {
   /* justify-content: center; */
   /* align-items: center; */
   scroll-snap-align: start;
-  padding-top: 100px;
+  /* padding-top: 100px; */
   margin-top: 0;
   box-sizing: border-box;
 
@@ -68,14 +69,17 @@ section {
 }
 
 .two {
+  padding-top: 75px;
   /* background-color: bisque; */
 }
 
 .three {
+  padding-top: 75px;
   /* background-color: blueviolet; */
 }
 
 .four {
+  padding-top: 75px;
   /* background-color: tomato; */
 }
 
@@ -83,8 +87,8 @@ section {
 
 .nav-bar {
   max-width: 95%;
-  margin: 20px auto;
-  padding: 2px 2px;
+  margin: 5px auto;
+  /* padding: 2px 2px; */
   border-radius: 8px;
   display: flex;
   justify-content: space-between;
@@ -223,6 +227,8 @@ button {
   gap: 8px;
   cursor: pointer;
   font-family: 'Lexend', sans-serif;
+  font-family: "Stack Sans Notch", sans-serif;
+  font-family: Nippo-Bold;
   ;
 }
 
@@ -328,7 +334,7 @@ button:hover {
 
 .hero-content {
   height: 85vh;
-  margin: 80px 40px;
+  margin: 50px 40px;
   background-color: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(10px);
@@ -357,18 +363,21 @@ button:hover {
 }
 
 .hero-content .greeting {
-  font-family: 'Lexend', sans-serif;
-  font-size: 1.2rem;
-  font-weight: 400;
+  /* font-family: 'Lexend', sans-serif; */
+  font-family: 'Smooch Sans', sans-serif;
+  font-size: 3rem;
+  font-weight: 800;
   margin-bottom: 0;
   color: #333;
 }
 
 .hero-content .name {
   font-family: 'Smooch Sans', sans-serif;
-  font-family: Panchang-Semibold;
+  font-family: Panchang-Bold;
+  /* font-family: Nippo-Variable; */
+   /* font-family: "Stack Sans Notch", sans-serif; */
   /* font-family: Array-Semibold; */
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 800;
   margin: 8px 0 16px 0;
   color: #000;
@@ -377,8 +386,8 @@ button:hover {
 
 .hero-content .tagline {
   font-family: 'Smooch Sans', sans-serif;
-  font-size: 1.6rem;
-  font-weight: 600;
+  font-size: 2rem;
+  font-weight: 700;
   margin-bottom: 16px;
   color: #333;
   line-height: 1.3;
@@ -387,8 +396,8 @@ button:hover {
 .hero-content .bio {
   font-family: 'Lexend', sans-serif;
   font-size: 1rem;
-  line-height: 1.6;
-  color: #555;
+  line-height: 1.4;
+  color: #444242;
   margin-bottom: 24px;
 }
 
@@ -403,7 +412,9 @@ button:hover {
   border: none;
   border-radius: 8px;
   font-size: 1.1rem;
-  font-family: 'Lexend', sans-serif;
+  /* font-family: 'Lexend', sans-serif; */
+  /* font-family: "Stack Sans Notch", sans-serif; */
+  font-family: Nippo-Bold;
   font-weight: 500;
   cursor: pointer;
   transition: all 0.3s ease;
