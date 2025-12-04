@@ -29,19 +29,20 @@ body {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
   height: 100vh;
-  background-image: url("../assets/steve-johnson-UlJ6UMbto10-unsplash.jpg");
-  background-image: url("../assets/simon-lee-wVTBCzP3Ffw-unsplash.jpg");
+  /* background-image: url("../assets/steve-johnson-UlJ6UMbto10-unsplash.jpg"); */
+  /* background-image: url("../assets/simon-lee-wVTBCzP3Ffw-unsplash.jpg"); */
   background-image: url("../assets/simon-lee-2FWcYzN7X_c-unsplash.jpg");
-  background-image: url("../assets/simon-lee-I9wXip-cqvA-unsplash.jpg");
+  /* background-image: url("../assets/simon-lee-I9wXip-cqvA-unsplash.jpg"); */
   /* background-image: url("../assets/simon-lee-Fee-R5kR8EQ-unsplash.jpg"); */
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  padding-top: 20px;
+  /* padding-top: 20px; */
   /* scroll-padding-top: 80px; */
   /* margin-top: 20px; */
   /* background-attachment: fixed; */
   /* object-fit: cover; */
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
 }
 
 
@@ -53,26 +54,49 @@ section {
   /* align-items: center; */
   scroll-snap-align: start;
   /* padding-top: 100px; */
+  position: relative;
+  /* scroll-margin-top: 80px; */
   margin-top: 0;
   box-sizing: border-box;
-
+  height: auto; 
 }
 
 .one {
   padding-top: 10px;
+  min-height: calc(100vh - 80px);
+  height: auto; 
 }
 
-.two {
+/* .two {
   padding-top: 75px;
+  min-height: calc(100vh - 80px);
+  height: auto; 
 }
 
 .three {
   padding-top: 75px;
+  min-height: calc(100vh - 80px);
+  height: auto; 
 }
 
 .four {
   padding-top: 75px;
+  min-height: calc(100vh - 80px);
+  height: auto; 
+} */
+
+
+.two, .three, .four {
+  height: 100vh; /* Sections must be 100vh */
+  scroll-snap-align: start;
+  /* display: flex;
+  align-items: center; 
+  justify-content: center;  */
+  padding-top: 60px; /* Account for fixed header */
+  box-sizing: border-box;
 }
+
+
 
 /* Navigation Bar */
 
@@ -91,7 +115,7 @@ section {
 }
 
 /* Left (logo) */
-.logo{
+.logo {
   font-family: Array-Semibold;
   /* font-family: Styro-Medium; */
   /* font-family: Technor-Semibold; */
@@ -361,7 +385,7 @@ button:hover {
   font-family: 'Smooch Sans', sans-serif;
   font-family: Panchang-Bold;
   /* font-family: Nippo-Variable; */
-   /* font-family: "Stack Sans Notch", sans-serif; */
+  /* font-family: "Stack Sans Notch", sans-serif; */
   /* font-family: Array-Semibold; */
   font-size: 3rem;
   font-weight: 800;
@@ -481,8 +505,62 @@ cta-button .material-symbols-outlined {
 
 
 
+/* ===== About, Work, and Pitch Sections - Unified Styling ===== */
+.about-content,
+.work-content,
+.pitch-content {
+  /* Layout & Spacing */
+  max-width: 95%;
+  margin: 0 auto;
+  padding: 20px;
+  
+  /* Visual Design */
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border: 2px solid white;
+  
+  /* Scroll Behavior - CRITICAL FOR SCROLL-SNAP */
+  overflow-y: auto;
+  height: 85vh;
+  /* height: calc(100vh - 160px);  */
+  min-height: 500px;
+  /* position: relative; */
+  
+  /* Custom Scrollbar - Optional but nice */
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.3) transparent;
+}
 
+/* Webkit Scrollbar Styling */
+.about-content::-webkit-scrollbar,
+.work-content::-webkit-scrollbar,
+.pitch-content::-webkit-scrollbar {
+  width: 8px;
+}
 
+.about-content::-webkit-scrollbar-track,
+.work-content::-webkit-scrollbar-track,
+.pitch-content::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+.about-content::-webkit-scrollbar-thumb,
+.work-content::-webkit-scrollbar-thumb,
+.pitch-content::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+.about-content::-webkit-scrollbar-thumb:hover,
+.work-content::-webkit-scrollbar-thumb:hover,
+.pitch-content::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
 
 
 /* ABOUT STYLING */
@@ -498,9 +576,9 @@ cta-button .material-symbols-outlined {
 }
 
 /* About section styling */
-.about-content,
+/* .about-content,
 .work-content,
-.pitch-content {
+.pitch-content{
   max-width: 95%;
   margin: 0 auto;
   padding: 20px;
@@ -512,7 +590,7 @@ cta-button .material-symbols-outlined {
   border: white solid 2px;
   overflow-y: auto;
   height: 85vh;
-}
+} */
 
 .about-container {
   display: flex;
@@ -542,7 +620,7 @@ cta-button .material-symbols-outlined {
 
 
 
-about-container {
+.about-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
@@ -842,7 +920,7 @@ h3,
 
 
 /* ===== Projects Section ===== */
-.work-content {
+/* .work-content {
   max-width: 95%;
   margin: 0 auto;
   padding: 20px;
@@ -853,13 +931,13 @@ h3,
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   border: white solid 2px;
   overflow-y: auto;
-}
+} */
 
 .projects-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  gap: 30px;
-  margin-top: 30px;
+  gap: 20px;
+  margin-top: 10px;
 }
 
 .project-card {
@@ -1172,13 +1250,13 @@ h3,
 
 
 /* Pitch Section Structure */
-#pitch {
+/* #pitch {
   height: 100vh;
   display: flex;
   flex-direction: column;
   padding: 20px;
   box-sizing: border-box;
-}
+} */
 
 .section-title {
   margin-bottom: 30px;
@@ -1186,7 +1264,7 @@ h3,
 
 .pitch-column-container {
   display: flex;
-  height: calc(100% - 80px);
+  /* height: calc(100% - 80px); */
   /* Account for title space */
   gap: 30px;
 }
@@ -1491,3 +1569,4 @@ h3,
     height: 35px;
   }
 }
+
