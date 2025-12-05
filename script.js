@@ -78,3 +78,42 @@ function adjustForNavbar() {
 // Run on load and resize
 window.addEventListener('load', adjustForNavbar);
 window.addEventListener('resize', adjustForNavbar);
+
+
+
+
+
+// Simple hover effect
+const projectItems = document.querySelectorAll('.project-item');
+const projectCards = document.querySelectorAll('.project-card');
+
+projectItems.forEach(item => {
+    item.addEventListener('mouseenter', () => {
+        const targetId = item.getAttribute('data-target');
+        
+        // Remove active class from all
+        projectItems.forEach(i => i.classList.remove('active'));
+        projectCards.forEach(card => card.classList.remove('active'));
+        
+        // Add active class to hovered item
+        item.classList.add('active');
+        
+        // Show corresponding card
+        const targetCard = document.getElementById(targetId);
+        if (targetCard) {
+            targetCard.classList.add('active');
+        }
+    });
+});
+
+// Set first project as active by default
+document.addEventListener('DOMContentLoaded', () => {
+    if (projectItems.length > 0) {
+        projectItems[0].classList.add('active');
+        const firstTarget = projectItems[0].getAttribute('data-target');
+        const firstCard = document.getElementById(firstTarget);
+        if (firstCard) {
+            firstCard.classList.add('active');
+        }
+    }
+});
