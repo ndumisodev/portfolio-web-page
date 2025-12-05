@@ -594,8 +594,9 @@ cta-button .material-symbols-outlined {
 
 .about-container {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 20px;
   justify-content: space-between;
 
 }
@@ -604,7 +605,7 @@ cta-button .material-symbols-outlined {
 .about-text {
   flex: 1;
   min-width: 300px;
-  padding: 20px;
+  padding: 13px;
   background-color: rgba(255, 255, 255, 0.7);
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
@@ -614,18 +615,60 @@ cta-button .material-symbols-outlined {
   font-family: 'Lexend', sans-serif;
   font-size: 1rem;
   line-height: 1.6;
-  margin-bottom: 1rem;
-  color: #333;
+  margin-bottom: 0.5rem;
+  color: #1a1919;
+  line-height: 1.2;
 }
 
+.about-content {
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    /* padding: 3rem 2rem; */
+}
+/* 
+.section-title {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+} */
+
+/* Photo + Intro Section */
+.about-hero {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 1rem;
+    align-items: start;
+    /* margin-bottom: 4rem; */
+}
+
+.about-image {
+    width: 240px;
+    height: 220px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* .about-text p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+    font-size: 1rem;
+} */
 
 
+/* 
 .about-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
   align-items: start;
-}
+} */
 
 .currently-learning {
   margin-top: 2rem;
@@ -1492,13 +1535,13 @@ h3,
 
 
 /* Update the about-container layout to accommodate three columns on larger screens */
-@media (min-width: 1200px) {
+/* @media (min-width: 1700px) {
   .about-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
   }
-}
+} */
 
 /* On medium screens, have education and skills in a row below about-text */
 @media (min-width: 768px) and (max-width: 1199px) {
