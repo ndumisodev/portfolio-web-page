@@ -83,37 +83,78 @@ window.addEventListener('resize', adjustForNavbar);
 
 
 
-// Simple hover effect
-const projectItems = document.querySelectorAll('.project-item');
-const projectCards = document.querySelectorAll('.project-card');
-
-projectItems.forEach(item => {
-    item.addEventListener('mouseenter', () => {
-        const targetId = item.getAttribute('data-target');
+/// Project hover functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const projectItems = document.querySelectorAll('.project-list-item');
+    const projectCards = document.querySelectorAll('.project-card');
+    
+    // Function to switch active project
+    function activateProject(targetId) {
+        // Remove active class from all items and cards
+        projectItems.forEach(item => {
+            item.classList.remove('active');
+        });
         
-        // Remove active class from all
-        projectItems.forEach(i => i.classList.remove('active'));
-        projectCards.forEach(card => card.classList.remove('active'));
+        projectCards.forEach(card => {
+            card.classList.remove('active');
+            // Add fade-out animation before hiding
+            card.style.animation = 'fadeOut 0.3s ease';
+        });
         
-        // Add active class to hovered item
-        item.classList.add('active');
+        // Add active class to clicked item
+        const activeItem = document.querySelector(`[data-target="${targetId}"]`);
+        if (activeItem) {
+            activeItem.classList.add('active');
+        }
         
-        // Show corresponding card
-        const targetCard = document.getElementById(targetId);
-        if (targetCard) {
-            targetCard.classList.add('active');
+        // Show corresponding card with animation delay
+        setTimeout(() => {
+            const activeCard = document.getElementById(targetId);
+            if (activeCard) {
+                activeCard.classList.add('active');
+                activeCard.style.animation = 'slideIn 0.5s ease forwards';
+            }
+        }, 300);
+    }
+    
+    // Add event listeners to project items
+    projectItems.forEach(item => {
+        // Hover effect
+        item.addEventListener('mouseenter', () => {
+            const targetId = item.getAttribute('data-target');
+            activateProject(targetId);
+        });
+        
+        // Click effect for mobile/touch devices
+        item.addEventListener('click', () => {
+            const targetId = item.getAttribute('data-target');
+            activateProject(targetId);
+        });
+    });
+    
+    // Set first project as active on page load
+    if (projectItems.length > 0) {
+        const firstTarget = projectItems[0].getAttribute('data-target');
+        activateProject(firstTarget);
+    }
+    
+    // Optional: Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+        const activeItem = document.querySelector('.project-list-item.active');
+        if (!activeItem) return;
+        
+        let nextItem;
+        
+        if (e.key === 'ArrowDown') {
+            nextItem = activeItem.nextElementSibling;
+        } else if (e.key === 'ArrowUp') {
+            nextItem = activeItem.previousElementSibling;
+        }
+        
+        if (nextItem && nextItem.classList.contains('project-list-item')) {
+            const targetId = nextItem.getAttribute('data-target');
+            activateProject(targetId);
+            nextItem.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
         }
     });
-});
-
-// Set first project as active by default
-document.addEventListener('DOMContentLoaded', () => {
-    if (projectItems.length > 0) {
-        projectItems[0].classList.add('active');
-        const firstTarget = projectItems[0].getAttribute('data-target');
-        const firstCard = document.getElementById(firstTarget);
-        if (firstCard) {
-            firstCard.classList.add('active');
-        }
-    }
 });

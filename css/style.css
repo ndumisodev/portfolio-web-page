@@ -1074,6 +1074,226 @@ h3,
 
 
 
+
+
+/* ===== Two-Column Layout ===== */
+.projects-container.two-column {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+    height: 100%;
+    min-height: 70vh;
+}
+
+/* LEFT COLUMN: Project List */
+.project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-right: 20px;
+    border-right: 2px solid rgba(255, 255, 255, 0.1);
+    overflow-y: auto;
+    max-height: 70vh;
+}
+
+.project-list-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    border-left: 4px solid transparent;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.project-list-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(194, 113, 255, 0.1), transparent);
+    transition: left 0.6s ease;
+}
+
+.project-list-item:hover::before {
+    left: 100%;
+}
+
+.project-list-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateX(10px);
+    border-left-color: #C271FF;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.project-list-item.active {
+    background: rgba(194, 113, 255, 0.15);
+    border-left-color: #C271FF;
+    box-shadow: 0 5px 20px rgba(194, 113, 255, 0.2);
+}
+
+.project-number {
+    font-family: 'Smooch Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: 800;
+    color: #C271FF;
+    min-width: 40px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.project-list-info h3 {
+    font-family: 'Smooch Sans', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.project-list-item:hover .project-list-info h3 {
+    color: #C271FF;
+}
+
+.project-tech-small {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.project-tech-small span {
+    font-size: 0.7rem;
+    padding: 3px 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.project-list-item:hover .project-tech-small span {
+    background: rgba(194, 113, 255, 0.2);
+    color: white;
+}
+
+/* RIGHT COLUMN: Project Detail View */
+.project-detail-view {
+    overflow-y: auto;
+    padding: 10px;
+    max-height: 70vh;
+    position: relative;
+}
+
+/* Hide all project cards by default */
+.project-card {
+    display: none;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Show only active project card */
+.project-card.active {
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+    transform: translateY(0);
+    animation: slideIn 0.5s ease forwards;
+}
+
+/* Make project card fill the column */
+.project-card {
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+.project-card .project-image {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 25px;
+}
+
+.project-card .project-info {
+    padding: 25px;
+}
+
+/* Animation for card switching */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .projects-container.two-column {
+        grid-template-columns: 1fr 1.5fr;
+        gap: 30px;
+    }
+    
+    .project-card .project-image {
+        height: 220px;
+    }
+}
+
+@media (max-width: 768px) {
+    .projects-container.two-column {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .project-list {
+        border-right: none;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+        padding-right: 0;
+        padding-bottom: 20px;
+        flex-direction: row;
+        overflow-x: auto;
+        max-height: none;
+    }
+    
+    .project-list-item {
+        min-width: 250px;
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    .project-number {
+        font-size: 1.8rem;
+    }
+    
+    .project-list-info h3 {
+        font-size: 1.2rem;
+    }
+    
+    .project-detail-view {
+        max-height: none;
+    }
+}
+
+
+
 /* .projects-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
