@@ -1073,6 +1073,9 @@ h3,
   display: block;
   /* Change from flex to block */
   width: 100%;
+  opacity: 1;
+  transform: translateY(0);
+  animation: slideIn 0.5s ease forwards;
 }
 
 /* Animation for card switching */
