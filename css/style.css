@@ -1046,7 +1046,8 @@ h3,
 
 /* RIGHT COLUMN: Project Details */
 .project-details-column {
-    overflow-y: auto;
+    /* overflow-y: auto; */
+    overflow: visible;
     padding: 10px;
 }
 
@@ -1081,8 +1082,9 @@ h3,
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 40px;
-    height: 100%;
+    height: auto;
     min-height: 70vh;
+    max-height: 70vh;
 }
 
 /* LEFT COLUMN: Project List */
