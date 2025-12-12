@@ -757,7 +757,7 @@ cta-button .material-symbols-outlined {
 
 .currently-learning li:before {
     content: "▸";
-    color: #C271FF;
+    color: #080808;
     position: absolute;
     left: -15px;
 }
@@ -788,7 +788,8 @@ cta-button .material-symbols-outlined {
     color: #000;
     text-align: left;
     padding-bottom: 10px;
-    border-bottom: 2px solid rgba(194, 113, 255, 0.3);
+
+    border-bottom: 2px solid rgba(2, 2, 2, 0.3);
 }
 
 
@@ -987,7 +988,7 @@ h3,
   color: #000;
   text-align: center;
   padding-bottom: 10px;
-   border-bottom: 2px solid rgba(194, 113, 255, 0.3);
+   border-bottom: 2px solid rgba(2, 2, 2, 0.3);
 }
 
 .skills-grid {
