@@ -67,7 +67,7 @@ section {
   /* padding-top: 10px; */
   /* min-height: calc(100vh - 80px); */
   height: 100vh;
-  background-image: url('../assets/simon-lee-2FWcYzN7X_c-unsplash-1.jpg');
+  background-image: url("../assets/simon-lee-2FWcYzN7X_c-unsplash (Edited-3).jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -217,21 +217,34 @@ section {
 
   /* height: 85vh; */
   /* margin: 50px 40px; */
-  background-color: rgba(125, 145, 137, 0.7);
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(5px);
+  /* background-color: rgba(125, 145, 137, 0.7); */
+  /* backdrop-filter: blur(6px); */
+  /* -webkit-backdrop-filter: blur(5px); */
   border-radius: 8px;
 
 
   /* padding: 40px; */
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
+  /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); */
+  /* overflow: hidden; */
   border: white solid 2px;
 }
 
 
 .hero-content .text {
-  max-width: 50%;
+  /* max-width: 50%; */
+  background-color: rgba(125, 145, 137, 0.7);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border: white solid 2px;
+  /* height: 100vh; */
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
 }
 
 .hero-content h1 {
@@ -1950,10 +1963,10 @@ h3,
     overflow-y: auto;
   }
 
-  .hero-content .text {
+  /* .hero-content .text {
     max-width: 100%;
     margin-bottom: 30px;
-  }
+  } */
 
   .image-container {
     width: 80%;
