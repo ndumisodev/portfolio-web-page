@@ -32,6 +32,7 @@ body {
   /* background-image: url("../assets/steve-johnson-UlJ6UMbto10-unsplash.jpg"); */
   /* background-image: url("../assets/simon-lee-wVTBCzP3Ffw-unsplash.jpg"); */
   background-image: url("../assets/simon-lee-2FWcYzN7X_c-unsplash (Edited-3).jpg");
+  background-image: url('../assets/simon-lee-2FWcYzN7X_c-unsplash-1.jpg');
   /* background-image: url("../assets/simon-lee-I9wXip-cqvA-unsplash.jpg"); */
   /* background-image: url("../assets/simon-lee-Fee-R5kR8EQ-unsplash.jpg"); */
   background-size: cover;
@@ -63,10 +64,13 @@ section {
 }
 
 .one {
-  padding-top: 10px;
-  min-height: calc(100vh - 80px);
-  height: auto;
+  /* padding-top: 10px; */
+  /* min-height: calc(100vh - 80px); */
+  height: 100vh;
   background-image: url('../assets/simon-lee-2FWcYzN7X_c-unsplash-1.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 
@@ -209,17 +213,17 @@ section {
   justify-content: center;
   align-items: center;
   padding: 0 5%;
-  height: 100%;
+  height: 100vh;
 
-  height: 85vh;
-  margin: 50px 40px;
+  /* height: 85vh; */
+  /* margin: 50px 40px; */
   background-color: rgba(125, 145, 137, 0.7);
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(5px);
   border-radius: 8px;
 
 
-  padding: 40px;
+  /* padding: 40px; */
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   border: white solid 2px;
