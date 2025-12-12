@@ -548,9 +548,9 @@ cta-button .material-symbols-outlined {
   padding: 20px;
 
   /* Visual Design */
-  background-color: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(3px);
-  -webkit-backdrop-filter: blur(10px);
+  /* background-color: rgba(255, 255, 255, 0.1); */
+  /* backdrop-filter: blur(3px); */
+  /* -webkit-backdrop-filter: blur(10px); */
   border-radius: 8px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   border: 2px solid white;
@@ -642,6 +642,8 @@ cta-button .material-symbols-outlined {
   background-color: rgba(255, 255, 255, 0.7);
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(10px); 
 }
 
 .about-text p {
@@ -723,7 +725,12 @@ cta-button .material-symbols-outlined {
     padding: 20px;
     background: rgba(194, 113, 255, 0.08);
     border-radius: 10px;
-    border-left: 4px solid #C271FF;
+    border-left: 4px solid #ffffff;
+    background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(10px); 
 }
 
 .currently-learning h4 {
@@ -745,6 +752,7 @@ cta-button .material-symbols-outlined {
     margin-bottom: 8px;
     color: #444;
     position: relative;
+    list-style-type:none;
 }
 
 .currently-learning li:before {
@@ -768,6 +776,8 @@ cta-button .material-symbols-outlined {
     background-color: rgba(255, 255, 255, 0.7);
     border-radius: 12px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(10px); 
 }
 
 .education-container h3 {
@@ -845,6 +855,8 @@ cta-button .material-symbols-outlined {
   background-color: rgba(255, 255, 255, 0.7);
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(10px); 
 }
 
 
