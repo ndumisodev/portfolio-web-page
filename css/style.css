@@ -66,12 +66,13 @@ section {
   padding-top: 10px;
   min-height: calc(100vh - 80px);
   height: auto;
+  background-image: url('../assets/simon-lee-2FWcYzN7X_c-unsplash-1.jpg');
 }
 
 
 .two {
 
-  background-image: url("../assets/simon-lee-2FWcYzN7X_c-unsplash-1.jpg");
+  /* background-image: url("../assets/simon-lee-2FWcYzN7X_c-unsplash-1.jpg"); */
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
