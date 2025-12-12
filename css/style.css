@@ -245,7 +245,7 @@ section {
   /* height: 100vh; */
   max-width: 1000px;
   width: 100%;
- padding: 35px 100px;
+  padding: 35px 100px;
 
 }
 
@@ -666,13 +666,19 @@ cta-button .material-symbols-outlined {
     font-size: 2.5rem;
 } */
 
-/* Photo + Intro Section */
+/* ===== About Section Layout ===== */
+
+/* Top Section: Photo + Intro */
 .about-hero {
-  display: grid;
-  grid-template-columns: 300px 1fr;
-  gap: 1rem;
-  align-items: start;
-  /* margin-bottom: 4rem; */
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    /* gap: 40px; */
+    align-items: start;
+    /* margin-bottom: 40px; */
+    /* padding: 25px; */
+    /* background-color: rgba(255, 255, 255, 0.); */
+    border-radius: 12px;
+    /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08); */
 }
 
 .about-image {
@@ -680,7 +686,7 @@ cta-button .material-symbols-outlined {
   height: 220px;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); */
 }
 
 .about-image img {
@@ -688,6 +694,12 @@ cta-button .material-symbols-outlined {
   height: 100%;
   object-fit: cover;
 }
+
+.about-image:hover img {
+    transform: scale(1.05);
+}
+
+
 
 /* .about-text p {
     margin-bottom: 1rem;
@@ -704,31 +716,77 @@ cta-button .material-symbols-outlined {
   align-items: start;
 } */
 
+
+/* Currently Learning section */
 .currently-learning {
-  margin-top: 2rem;
-  padding: 1rem;
-  background: rgba(255, 255, 255, 0.3);
-  border-radius: 8px;
+    margin-top: 20px;
+    padding: 20px;
+    background: rgba(194, 113, 255, 0.08);
+    border-radius: 10px;
+    border-left: 4px solid #C271FF;
 }
 
 .currently-learning h4 {
-  font-family: 'Lexend', sans-serif;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-  color: #333;
+    font-family: 'Smooch Sans', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #000;
 }
 
 .currently-learning ul {
-  padding-left: 1.5rem;
+    padding-left: 20px;
+    margin: 0;
 }
 
 .currently-learning li {
-  font-family: 'Lexend', sans-serif;
-  margin-bottom: 0.3rem;
-  color: #555;
+    font-family: 'Lexend', sans-serif;
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: #444;
+    position: relative;
+}
+
+.currently-learning li:before {
+    content: "▸";
+    color: #C271FF;
+    position: absolute;
+    left: -15px;
+}
+
+/* Bottom Section: Two Columns */
+.about-bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
 }
 
 
+/* Education Container */
+.education-container {
+    padding: 25px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.education-container h3 {
+    font-family: 'Smooch Sans', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: #000;
+    text-align: left;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgba(194, 113, 255, 0.3);
+}
+
+
+
+
+
+
+/* 
 .skills-container {
   flex: 1;
   min-width: 300px;
@@ -771,11 +829,11 @@ cta-button .material-symbols-outlined {
 }
 
 .skill-category li:before {
-  /* content: "→"; */
+ 
   position: absolute;
   left: 0;
   color: #000;
-}
+} */
 
 
 /* Education section styling */
@@ -916,6 +974,8 @@ h3,
   margin-bottom: 1.5rem;
   color: #000;
   text-align: center;
+  padding-bottom: 10px;
+   border-bottom: 2px solid rgba(194, 113, 255, 0.3);
 }
 
 .skills-grid {
@@ -990,6 +1050,74 @@ h3,
 .skills-list i:not(.colored) {
   color: #333;
 }
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .about-bottom {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    
+    .about-hero {
+        grid-template-columns: 200px 1fr;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .about-image {
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+    }
+    
+    .about-text {
+        text-align: left;
+    }
+    
+    .currently-learning {
+        text-align: left;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-hero {
+        padding: 20px;
+    }
+    
+    .education-container,
+    .skills-container {
+        padding: 20px;
+    }
+    
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Timeline layout for education */
+.education-timeline {
+    position: relative;
+    padding-left: 40px;
+}
+
+.education-timeline::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, #C271FF, #8B46FF);
+}
+
 
 
 
