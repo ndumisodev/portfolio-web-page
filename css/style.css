@@ -997,6 +997,23 @@ h3,
   gap: 25px;
 }
 
+
+
+.skill-category {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-category:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(194, 113, 255, 0.15);
+}
+
+
+
 .skill-category h4 {
   font-family: 'Lexend', sans-serif;
   font-weight: 600;
