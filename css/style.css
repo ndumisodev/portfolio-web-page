@@ -3014,7 +3014,7 @@ h3,
     padding: 20px;
     background: #f8f9fa;
     border-radius: 12px;
-    border-left: 4px solid #C271FF;
+    border-left: 4px solid #757c7c;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -3026,7 +3026,7 @@ h3,
 .contact-icon {
     width: 50px;
     height: 50px;
-    background: #C271FF;
+    background: #747575;
     border-radius: 12px;
     display: flex;
     align-items: center;
@@ -3056,7 +3056,7 @@ h3,
 .contact-link {
     display: inline-block;
     font-family: 'Lexend', sans-serif;
-    color: #C271FF;
+    color: #36323a;
     text-decoration: none;
     font-weight: 500;
     font-size: 0.9rem;
@@ -3064,7 +3064,7 @@ h3,
 }
 
 .contact-link:hover {
-    color: #a85ae6;
+    color: #37343a;
     text-decoration: underline;
 }
 
@@ -3072,7 +3072,7 @@ h3,
     display: inline-block;
     padding: 4px 12px;
     background: rgba(194, 113, 255, 0.1);
-    color: #C271FF;
+    color: #3e3842;
     border-radius: 20px;
     font-size: 0.85rem;
     font-weight: 500;
@@ -3177,7 +3177,7 @@ h3,
 .contact-form select:focus,
 .contact-form textarea:focus {
     outline: none;
-    border-color: #C271FF;
+    border-color: #686565;
     background: white;
 }
 
@@ -3193,7 +3193,7 @@ h3,
     gap: 10px;
     width: 100%;
     padding: 15px;
-    background: #C271FF;
+    background: #000000;
     color: white;
     border: none;
     border-radius: 8px;
@@ -3205,7 +3205,7 @@ h3,
 }
 
 .submit-btn:hover {
-    background: #a85ae6;
+    background: #77807f;
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(194, 113, 255, 0.3);
 }
@@ -3265,7 +3265,7 @@ h3,
     align-items: center;
     gap: 8px;
     font-family: 'Lexend', sans-serif;
-    color: #C271FF;
+    color: #7b787e;
     text-decoration: none;
     font-size: 0.9rem;
     padding: 8px 16px;
