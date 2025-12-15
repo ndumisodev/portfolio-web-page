@@ -87,11 +87,18 @@ section {
 .three {
 
   background-image: url("../assets/simon-lee-I9wXip-cqvA-unsplash.jpg");
+  
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
 
+.four {
+  background-image: url('../assets/simon-lee-2FWcYzN7X_c-unsplash (Edited-2).jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
 
 
 .two,
@@ -3136,7 +3143,7 @@ h3,
 .form-header h3 {
     font-family: 'Smooch Sans', sans-serif;
     font-size: 2rem;
-    color: #333;
+    color: #ffffff;
     margin-bottom: 10px;
 }
 
@@ -3207,7 +3214,7 @@ h3,
 .submit-btn:hover {
     background: #77807f;
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(194, 113, 255, 0.3);
+    box-shadow: 0 5px 15px rgba(19, 19, 19, 0.3);
 }
 
 .btn-icon {
@@ -3255,7 +3262,7 @@ h3,
 
 .footer-tagline {
     font-family: 'Lexend', sans-serif;
-    color: #888;
+    color: #ffffff;
     font-size: 0.85rem;
     font-style: italic;
 }
@@ -3269,7 +3276,7 @@ h3,
     text-decoration: none;
     font-size: 0.9rem;
     padding: 8px 16px;
-    border: 1px solid rgba(194, 113, 255, 0.3);
+    border: 2px solid rgba(255, 255, 255, 0.3);
     border-radius: 20px;
     transition: all 0.3s ease;
 }
