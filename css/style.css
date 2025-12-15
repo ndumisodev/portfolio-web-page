@@ -94,7 +94,7 @@ section {
 }
 
 .four {
-  background-image: url('../assets/simon-lee-2FWcYzN7X_c-unsplash (Edited-2).jpg');
+  background-image: url('../assets/simon-lee-2FWcYzN7X_c-unsplash (Edited-1).jpg');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -323,7 +323,7 @@ button:hover {
 
 .toggle_button .material-symbols-outlined {
   font-size: 2rem;
-  color: black;
+  color: rgb(255, 255, 255);
   /* Make the icon black */
 }
 
