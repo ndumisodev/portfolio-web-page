@@ -1916,6 +1916,15 @@ h3,
   line-height: 1.6;
 }
 
+
+.project-desc {
+  font-family: 'Lexend', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #333;
+}
+
 /* Project Filters */
 .project-filters {
   display: flex;
@@ -2083,11 +2092,13 @@ h3,
 }
 
 .project-tech span {
-  font-size: 0.75rem;
+  font-family: 'Lexend', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
   padding: 3px 10px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 12px;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(31, 30, 30, 0.8);
   transition: all 0.3s ease;
 }
 
